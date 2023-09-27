@@ -1,11 +1,11 @@
 Token -> COMENTARIOBLOQUE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 int-> TIPOINT
 main-> RESERVMAIN
 (-> ABREPARENTESIS
 )-> CIERRAPARENTESIS
 {-> ABRELLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 int-> TIPOINT
 temp-> IDENTIFICADOR
 =-> SIGNOIGUAL
@@ -16,7 +16,7 @@ residuo-> IDENTIFICADOR
 45-> LITINT
 )-> CIERRAPARENTESIS
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 if-> RESERVIF
 (-> ABREPARENTESIS
 temp-> IDENTIFICADOR
@@ -24,7 +24,7 @@ temp-> IDENTIFICADOR
 -12-> LITINT
 )-> CIERRAPARENTESIS
 {-> ABRELLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 read-> RESERVREAD
 (-> ABREPARENTESIS
 temp-> IDENTIFICADOR
@@ -37,14 +37,14 @@ temp-> IDENTIFICADOR
 temp-> IDENTIFICADOR
 ++-> AUMENTAR
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 break-> RESERVBREAK
 ;-> ENDLINE
 }-> CIERRALLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 else-> RESERVELSE
 :-> DOSPUNTOS
-Token -> SaltoLinea
+Token -> SALTOLINEA
 {-> ABRELLAVE
 temp-> IDENTIFICADOR
 =-> SIGNOIGUAL
@@ -64,15 +64,15 @@ otra-> IDENTIFICADOR
 ==-> IGUAL
 dif-> IDENTIFICADOR
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 }-> CIERRALLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 string-> TIPOSTRING
 miString-> IDENTIFICADOR
 =-> SIGNOIGUAL
 "$#%&/()!¡¿??¡?"-> LITSTRING
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 boolean-> IDENTIFICADOR
 miBool-> IDENTIFICADOR
 =-> SIGNOIGUAL
@@ -80,7 +80,7 @@ miBool-> IDENTIFICADOR
 <-> MENOR
 7-> LITINT
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 int-> TIPOINT
 numero-> IDENTIFICADOR
 =-> SIGNOIGUAL
@@ -92,17 +92,17 @@ numero-> IDENTIFICADOR
 4.0-> LITFLOAT
 )-> CIERRAPARENTESIS
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 print-> IDENTIFICADOR
 (-> ABREPARENTESIS
 numero-> IDENTIFICADOR
 )-> CIERRAPARENTESIS
 ;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 }-> CIERRALLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 Token -> COMENTARIO
-Token -> SaltoLinea
+Token -> SALTOLINEA
 int-> TIPOINT
 residuo-> IDENTIFICADOR
 (-> ABREPARENTESIS
@@ -110,7 +110,7 @@ int-> TIPOINT
 num-> IDENTIFICADOR
 )-> CIERRAPARENTESIS
 {-> ABRELLAVE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 return-> RESERVRETURN
 num-> IDENTIFICADOR
 --> SIGRESTA
@@ -118,30 +118,5 @@ num-> IDENTIFICADOR
 /-> SIGDIVISION
 num-> IDENTIFICADOR
 ;-> ENDLINE
-Token -> SaltoLinea
-}-> CIERRALLAVE
-Token -> SaltoLinea
-
- -> Error. Simbolo no encontrado
-i9gh-> IDENTIFICADOR
-)-> CIERRAPARENTESIS
-Token -> SaltoLinea
-Token -> COMENTARIO
-Token -> SaltoLinea
-int-> TIPOINT
-residuo-> IDENTIFICADOR
-(-> ABREPARENTESIS
-int-> TIPOINT
-num-> IDENTIFICADOR
-)-> CIERRAPARENTESIS
-{-> ABRELLAVE
-Token -> SaltoLinea
-return-> RESERVRETURN
-num-> IDENTIFICADOR
---> SIGRESTA
-11-> LITINT
-/-> SIGDIVISION
-num-> IDENTIFICADOR
-;-> ENDLINE
-Token -> SaltoLinea
+Token -> SALTOLINEA
 }-> CIERRALLAVE
